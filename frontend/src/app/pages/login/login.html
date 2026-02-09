@@ -1,0 +1,19 @@
+<div class="page">
+  <div class="card">
+
+    <h2>Login</h2>
+
+    <input [(ngModel)]="email" placeholder="Email">
+    <input [(ngModel)]="password" type="password" placeholder="Password">
+
+    <p class="error">{{ error }}</p>
+
+    <button (click)="login()">Login</button>
+
+    <div class="link">
+      No account?
+      <a routerLink="/register">Create Account</a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="page">
+  <div class="card">
+
+    <h2>Create Account</h2>
+
+    <input [(ngModel)]="user.fullName" placeholder="Full Name">
+    <input [(ngModel)]="user.email" placeholder="Email">
+    <input [(ngModel)]="user.college" placeholder="College Name">
+    <input [(ngModel)]="user.country" placeholder="Country">
+    <input [(ngModel)]="user.state" placeholder="State">
+    <input [(ngModel)]="user.district" placeholder="District">
+    <input [(ngModel)]="user.address" placeholder="Address">
+
+    <input [(ngModel)]="user.password" type="password" placeholder="Password">
+    <input [(ngModel)]="confirmPassword" type="password" placeholder="Confirm Password">
+
+    <p class="error">{{ error }}</p>
+
+    <button (click)="register()">Register</button>
+
+  </div>
+</div>
